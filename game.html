@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>เกมจับคู่คำศัพท์</title>
+  <link rel="stylesheet" href="assets/css/game.css">
+</head>
+<body>
+  <h1>เกมจับคู่คำศัพท์</h1>
+  <img src="image.png" alt="">
+  <div id="info">
+    <span id="lives">❤️ 5</span> | 
+    คะแนน: <span id="score">0</span> | 
+    High Score: <span id="highscore">0</span>
+  </div>
+
+  <!-- ปุ่มเลือกระดับ: ใช้ id เดียวสำหรับ container และปุ่มใช้ data-mode -->
+<div id="controls" class="controls">
+  <button class="btn diff" data-mode="easy">ง่าย</button>
+  <button class="btn diff" data-mode="medium">ปานกลาง</button>
+  <button class="btn diff" data-mode="hard">ยาก</button>
+</div>
+<div id="win-overlay" style="display:none" class="overlay">🎉 ชนะแล้ว! 🎉</div>
+<div id="game-board"></div>
+
+<!-- Overlay เมนูชนะ/แพ้ -->
+<div id="overlay" class="overlay" style="display:none">
+  <div class="overlay-card">
+    <h2 id="overlay-title"></h2>
+    <p id="overlay-msg"></p>
+    <div id="overlay-actions" class="overlay-actions"></div>
+  </div>
+</div>
+
+  <!-- ใส่ defer เพื่อให้ DOM โหลดก่อน -->
+  <script src="js/game.js" defer></script>
+</body>
+</html>
