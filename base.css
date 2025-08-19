@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;  /* จัดเรียงจากบนลงล่าง */
+  justify-content: center; /* จัดกลางแนวนอน */
+  align-items: center;     /* จัดกลางแนวตั้ง */
+  height: 100vh;
+}
+
+h1 {
+  color: rgb(20, 20, 20);
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #ff5722;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #e64a19;
+}
